@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio - Vũ Đức Sơn</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #bdc3c7;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-style: italic;
+            border: 2px dashed #ced4da;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Digital Portfolio</h1>
+        <p>Họ và tên: <strong>Vũ Đức Sơn</strong> | MSSV: <strong>25023376</strong></p>
+        <p>Môn học: Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo</p>
+    </header>
+
+    <nav>
+        <a href="#gioi-thieu">Trang Giới Thiệu</a>
+        <a href="#du-an">Trang Dự Án</a>
+        <a href="#tong-ket">Trang Tổng Kết</a>
+    </nav>
+
+    <div class="container">
+        <section id="gioi-thieu">
+            <h2>I. Trang Giới Thiệu</h2>
+            <div class="card">
+                <h3>1. Về bản thân</h3>
+                <div class="image-placeholder">[Chèn ảnh chân dung cá nhân của bạn tại đây]</div>
+                <p>[Hãy viết một đoạn văn ngắn gọn về ngành học, sở thích và lý do bạn đam mê công nghệ số...]</p>
+                
+                <h3>2. Mục tiêu học tập và định hướng</h3>
+                <ul>
+                    <li>Nắm vững các kỹ năng công nghệ số cơ bản để phục vụ học tập và công việc.</li>
+                    <li>Ứng dụng AI một cách sáng tạo và có trách nhiệm.</li>
+                    <li>[Thêm mục tiêu cá nhân của bạn...]</li>
+                </ul>
+
+                <h3>3. Mục tiêu của Portfolio</h3>
+                <p>Portfolio này được xây dựng nhằm mục đích tổng hợp, lưu trữ và trình bày các sản phẩm số cá nhân một cách khoa học, đồng thời đánh dấu hành trình phát triển kỹ năng công nghệ qua môn học.</p>
+            </div>
+        </section>
+
+        <section id="du-an">
+            <h2>II. Trang Dự Án (Các Bài Tập Thành Phần)</h2>
+            
+            <div class="card">
+                <h3>Bài 1: Thao tác cơ bản với tệp tin và thư mục</h3>
+                <p><strong>Mục tiêu:</strong> Thể hiện khả năng tổ chức, quản lý dữ liệu khoa học thông qua việc tạo cây thư mục và đặt tên tệp chuẩn xác.</p>
+                <div class="image-placeholder">[Chèn ảnh chụp màn hình cây thư mục trên máy tính/Drive]</div>
+                <p><strong>Mô tả:</strong> Cấu trúc thư mục được phân chia logic. Quy tắc đặt tên tệp tuân thủ nguyên tắc nhất quán, giúp tối ưu hóa không gian lưu trữ và truy xuất dữ liệu dễ dàng.</p>
+            </div>
+
+            <div class="card">
+                <h3>Bài 2: Tìm kiếm và đánh giá thông tin học thuật</h3>
+                <p><strong>Mục tiêu:</strong> Ứng dụng các toán tử tìm kiếm nâng cao và đánh giá độ tin cậy của nguồn tài liệu.</p>
+                <div class="image-placeholder">[Chèn ảnh chụp kết quả tìm kiếm sử dụng các toán tử AND, OR, filetype...]</div>
+                <p><strong>Phân tích:</strong> [Chèn link hoặc bảng đánh giá chi tiết nguồn tin dựa trên các tiêu chí như tác giả, ngày tháng, tính chính xác...]</p>
+            </div>
+
+            <div class="card">
+                <h3>Bài 3: Viết Prompt hiệu quả cho các tác vụ học tập</h3>
+                <p><strong>Mục tiêu:</strong> Áp dụng kỹ thuật Prompt Engineering để tương tác hiệu quả với AI.</p>
+                <table>
+                    <tr>
+                        <th>Prompt Ban Đầu</th>
+                        <th>Prompt Cải Tiến (Áp dụng vai trò, bối cảnh)</th>
+                    </tr>
+                    <tr>
+                        <td>[Điền prompt ngắn gọn ban đầu]</td>
+                        <td>[Điền prompt chi tiết, có phân vai, bối cảnh, định dạng đầu ra]</td>
+                    </tr>
+                </table>
+                <p><strong>Phân tích:</strong> [Giải thích lý do prompt cải tiến mang lại kết quả tốt hơn, chỉ ra sự khác biệt trong tư duy thiết kế prompt.]</p>
+            </div>
+
+            <div class="card">
+                <h3>Bài 4: Sử dụng công cụ hợp tác trực tuyến</h3>
+                <p><strong>Mục tiêu:</strong> Vận dụng công cụ trực tuyến để quản lý dự án và phối hợp nhóm hiệu quả.</p>
+                <div class="image-placeholder">[Chèn ảnh màn hình Google Workspace, Trello, hoặc Notion của nhóm]</div>
+                <p><strong>Thực hiện:</strong> [Trình bày chi tiết cách tích hợp các tính năng phân công công việc, thiết lập deadline và theo dõi tiến độ nhóm.]</p>
+            </div>
+
+            <div class="card">
+                <h3>Bài 5: Sử dụng AI tạo sinh sáng tạo nội dung</h3>
+                <p><strong>Mục tiêu:</strong> Tận dụng AI để hoàn thiện một sản phẩm nội dung số (hình ảnh, văn bản, video).</p>
+                <div class="image-placeholder">[Chèn sản phẩm cuối cùng: Ảnh AI tạo ra hoặc video minh họa]</div>
+                <p><strong>Quá trình sản xuất:</strong> [Mô tả các bước thực hiện từ lên ý tưởng, viết prompt tạo sinh đến chỉnh sửa hậu kỳ.]</p>
+            </div>
+
+            <div class="card">
+                <h3>Bài 6: Sử dụng AI có trách nhiệm</h3>
+                <p><strong>Mục tiêu:</strong> Xây dựng bộ nguyên tắc cá nhân về việc sử dụng AI, đảm bảo đạo đức và liêm chính học thuật.</p>
+                <ul>
+                    <li><strong>Nguyên tắc 1:</strong> Luôn minh bạch khi sử dụng nội dung do AI tạo ra.</li>
+                    <li><strong>Nguyên tắc 2:</strong> Không dùng AI để gian lận trong các bài kiểm tra.</li>
+                    <li><strong>Nguyên tắc 3:</strong> [Thêm các nguyên tắc khác của bạn...]</li>
+                </ul>
+                <p><strong>Phân tích:</strong> [Đánh giá các vấn đề đạo đức như bản quyền, thiên kiến và cách phòng tránh khi dùng AI.]</p>
+            </div>
+        </section>
+
+        <section id="tong-ket">
+            <h2>III. Trang Tổng Kết</h2>
+            <div class="card">
+                <h3>1. Trải nghiệm và cảm nhận cá nhân</h3>
+                <p>[Phân tích sâu sắc sự trưởng thành của bản thân sau khi hoàn thành khóa học. Bạn cảm thấy thế nào khi tự tay xây dựng Portfolio này?]</p>
+
+                <h3>2. Kiến thức cốt lõi</h3>
+                <p>[Liệt kê 2-3 kiến thức hoặc kỹ năng quan trọng nhất mà bạn đã thấm nhuần. Ví dụ: Kỹ năng quản lý dữ liệu, Prompt Engineering...]</p>
+
+                <h3>3. Điểm tâm đắc, Thách thức & Định hướng</h3>
+                <ul>
+                    <li><strong>Điểm tâm đắc:</strong> [Bạn tự hào nhất về phần nào trong Portfolio?]</li>
+                    <li><strong>Thách thức:</strong> [Khó khăn lớn nhất gặp phải là gì và bạn đã vượt qua nó như thế nào?]</li>
+                    <li><strong>Định hướng:</strong> [Bạn sẽ áp dụng các kỹ năng này vào các học kỳ tiếp theo hoặc công việc tương lai ra sao?]</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Vũ Đức Sơn - Bản quyền thuộc về tác giả.</p>
+        <p>MSSV: 25023376</p>
+    </footer>
+
+</body>
+</html>
